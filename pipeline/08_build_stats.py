@@ -112,7 +112,7 @@ def build():
     out = C.DATA_OUT / "stats.json"
     with open(out, "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
-    print(f"✓ stats.json 저장: {out}")
+    print(f"OK stats.json 저장: {out}")
     return stats
 
 def load_boundary_method(region: str) -> str | None:
@@ -136,4 +136,4 @@ if __name__ == "__main__":
     C.ensure_out()
     print("=== 08_build_stats.py ===")
     build()
-    print("✓ 08_build_stats.py 완료")
+    print("OK 08_build_stats.py 완료")
