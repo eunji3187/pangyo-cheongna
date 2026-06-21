@@ -1,0 +1,66 @@
+{
+  "pangyo": {
+    "population": 5744.9,
+    "households": 2915.0,
+    "workers": 27260.3,
+    "businesses": 2509.2,
+    "isochrone": {
+      "10": {
+        "pop": 69124.6,
+        "workers": 102960.2
+      },
+      "20": {
+        "pop": 402053.6,
+        "workers": 351898.8
+      },
+      "30": {
+        "pop": 972573.3,
+        "workers": 519520.5
+      },
+      "40": {
+        "pop": 1452821.0,
+        "workers": 692810.2
+      },
+      "50": {
+        "pop": 1841862.2,
+        "workers": 878347.4
+      },
+      "60": {
+        "pop": 2456925.7,
+        "workers": 1155489.1
+      }
+    }
+  },
+  "cheongna": {
+    "population": 16316.1,
+    "households": 6473.8,
+    "workers": 6148.4,
+    "businesses": 1481.6,
+    "isochrone": {
+      "10": {
+        "pop": null,
+        "workers": null
+      },
+      "20": {
+        "pop": null,
+        "workers": null
+      },
+      "30": {
+        "pop": null,
+        "workers": null
+      },
+      "40": {
+        "pop": null,
+        "workers": null
+      },
+      "50": {
+        "pop": null,
+        "workers": null
+      },
+      "60": {
+        "pop": null,
+        "workers": null
+      }
+    }
+  }
+}
