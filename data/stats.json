@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "network_cutoff": "2026-05-04",
+    "pop_year": "2024",
+    "household_year": "2024",
+    "business_year": "2023",
+    "sgis_boundary": "2025_2Q",
+    "building_source": "건축HUB 표제부",
+    "building_fetch_date": "2026-06",
+    "landuse_source": "AL_D154 토지이용계획정보",
+    "landuse_date_incheon": "2026-04-12",
+    "landuse_date_gyeonggi": "2026-04-12",
+    "walk_speed_m_per_s": 1.333,
+    "walk_cap_m": 1600,
+    "areal_method": "area-weighted apportionment",
+    "pangyo_boundary_method": "AL_D154_41 판교 일대 업무·상업 용도 필지 dissolve (IFEZ 토지이용계획 준거)",
+    "cheongna_boundary_method": "AL_D154_28 청라 업무·상업 용도 필지 dissolve (청라 국제업무단지 분석 기본 경계)"
+  },
+  "regions": {
+    "pangyo": {
+      "name": "한국테크노밸리(제1판교)",
+      "core_station": "판교",
+      "area_ha": 77.98,
+      "landuse_zone_pct": {
+        "주거": 41.79,
+        "상업": 27.76,
+        "업무": 0.0,
+        "공업": 4.02,
+        "비지": 0.0,
+        "기타": 26.44,
+        "지구단위": 0.0
+      },
+      "building_use_pct": {
+        "단독주택": 33.66,
+        "제1종근린생활시설": 20.59,
+        "업무시설": 14.71,
+        "제2종근린생활시설": 12.09,
+        "자동차관련시설": 5.23,
+        "공동주택": 3.92,
+        "교육연구시설": 3.92,
+        "판매시설": 0.65,
+        "노유자시설": 0.65,
+        "문화및집회시설": 0.65
+      },
+      "lum_entropy": 0.8666,
+      "mean_far": 227.998,
+      "mean_bcr": 48.213,
+      "vacant_parcel_pct": 25.18,
+      "population": 5744.9,
+      "households": 2915.0,
+      "workers": 27260.3,
+      "businesses": 2509.2,
+      "industry_mix_pct": {},
+      "jobs_housing_ratio": 4.7451,
+      "road_density_km_per_km2": null,
+      "bus_density_per_km2": 62.839,
+      "station_catchment_pct": {
+        "500m": null,
+        "1km": null
+      },
+      "isochrone": {
+        "10": {
+          "pop": 69124.6,
+          "workers": 102960.2
+        },
+        "20": {
+          "pop": 402053.6,
+          "workers": 351898.8
+        },
+        "30": {
+          "pop": 972573.3,
+          "workers": 519520.5
+        },
+        "40": {
+          "pop": 1452821.0,
+          "workers": 692810.2
+        },
+        "50": {
+          "pop": 1841862.2,
+          "workers": 878347.4
+        },
+        "60": {
+          "pop": 2456925.7,
+          "workers": 1155489.1
+        }
+      }
+    },
+    "cheongna": {
+      "name": "인천 청라 국제업무단지",
+      "core_station": "청라국제도시",
+      "area_ha": 409.61,
+      "landuse_zone_pct": {
+        "주거": 24.12,
+        "상업": 49.74,
+        "업무": 0.0,
+        "공업": 16.0,
+        "비지": 8.54,
+        "기타": 0.6,
+        "지구단위": 0.99
+      },
+      "building_use_pct": {
+        "교육연구시설": 32.75,
+        "업무시설": 25.12,
+        "공동주택": 16.2,
+        "단독주택": 7.99,
+        "공장": 6.71,
+        "제2종근린생활시설": 5.56,
+        "방송통신시설": 2.66,
+        "관광휴게시설": 0.93,
+        "제1종근린생활시설": 0.69,
+        "종교시설": 0.58
+      },
+      "lum_entropy": 0.7089,
+      "mean_far": 123.562,
+      "mean_bcr": 18.942,
+      "vacant_parcel_pct": 10.65,
+      "population": 16316.1,
+      "households": 6473.8,
+      "workers": 6148.4,
+      "businesses": 1481.6,
+      "industry_mix_pct": {},
+      "jobs_housing_ratio": 0.3768,
+      "road_density_km_per_km2": null,
+      "bus_density_per_km2": 35.888,
+      "station_catchment_pct": {
+        "500m": null,
+        "1km": null
+      },
+      "isochrone": {
+        "10": {
+          "pop": null,
+          "workers": null
+        },
+        "20": {
+          "pop": null,
+          "workers": null
+        },
+        "30": {
+          "pop": null,
+          "workers": null
+        },
+        "40": {
+          "pop": null,
+          "workers": null
+        },
+        "50": {
+          "pop": null,
+          "workers": null
+        },
+        "60": {
+          "pop": null,
+          "workers": null
+        }
+      }
+    }
+  }
+}

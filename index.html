@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>판교 vs 청라 — 스마트시티 공간 비교분석</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.2.1/ol.css" />
+  <script type="module" crossorigin src="./assets/index-CYUCQguW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CZtc7VYm.css">
+</head>
+<body>
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>판교 <span class="vs">vs</span> 청라</h1>
+      <p class="subtitle">한국테크노밸리(성공) · 청라 국제업무단지(저조) 공공데이터 비교분석</p>
+    </div>
+    <div id="data-meta" class="meta-badge">데이터 로딩 중…</div>
+  </header>
+
+  <main>
+    <!-- ① 지도 비교 -->
+    <section id="map-section">
+      <div class="map-controls">
+        <label for="layer-select">레이어:</label>
+        <select id="layer-select">
+          <option value="landuse">토지이용</option>
+          <option value="buildings">건축물 주용도</option>
+          <option value="isochrone">등시간권</option>
+        </select>
+        <div id="iso-controls" class="hidden">
+          <label for="iso-slider">등시간권 (분):</label>
+          <input id="iso-slider" type="range" min="10" max="60" step="10" value="30" />
+          <span id="iso-label">30분</span>
+        </div>
+      </div>
+
+      <div class="maps-wrapper">
+        <div class="map-container">
+          <div class="map-label">한국테크노밸리(제1판교)</div>
+          <div id="map-pangyo" class="map-pane"></div>
+          <div id="info-pangyo" class="feature-info"></div>
+        </div>
+        <div class="map-container">
+          <div class="map-label">인천 청라 국제업무단지</div>
+          <div id="map-cheongna" class="map-pane"></div>
+          <div id="info-cheongna" class="feature-info"></div>
+        </div>
+      </div>
+
+      <div id="map-legend" class="legend"></div>
+    </section>
+
+    <!-- ② 통계 패널 -->
+    <section id="stats-section">
+      <div class="tab-bar">
+        <button class="tab active" data-tab="landuse-tab">토지이용</button>
+        <button class="tab" data-tab="transport-tab">교통망</button>
+        <button class="tab" data-tab="population-tab">인구·사업체</button>
+      </div>
+
+      <div id="landuse-tab" class="tab-content active">
+        <div class="compare-table-wrapper">
+          <table id="landuse-table" class="compare-table">
+            <thead>
+              <tr><th>지표</th><th>판교</th><th>청라</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="charts-row">
+          <div class="chart-box">
+            <h3>용도지역 구성 비율</h3>
+            <canvas id="chart-landuse-pangyo"></canvas>
+            <p class="chart-sub">판교</p>
+          </div>
+          <div class="chart-box">
+            <h3>용도지역 구성 비율</h3>
+            <canvas id="chart-landuse-cheongna"></canvas>
+            <p class="chart-sub">청라</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="transport-tab" class="tab-content">
+        <div class="compare-table-wrapper">
+          <table id="transport-table" class="compare-table">
+            <thead>
+              <tr><th>지표</th><th>판교</th><th>청라</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="charts-row">
+          <div class="chart-box full-width">
+            <h3>누적 접근성 곡선 — 등시간권 내 종사자 수</h3>
+            <canvas id="chart-isochrone"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div id="population-tab" class="tab-content">
+        <div class="compare-table-wrapper">
+          <table id="population-table" class="compare-table">
+            <thead>
+              <tr><th>지표</th><th>판교</th><th>청라</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="charts-row">
+          <div class="chart-box">
+            <h3>산업 유형별 종사자 비율</h3>
+            <canvas id="chart-industry-pangyo"></canvas>
+            <p class="chart-sub">판교</p>
+          </div>
+          <div class="chart-box">
+            <h3>산업 유형별 종사자 비율</h3>
+            <canvas id="chart-industry-cheongna"></canvas>
+            <p class="chart-sub">청라</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="source-note"></div>
+    <p>가천대학교 스마트시티학과 · 스마트시티 이론과 실제 기말과제 2026</p>
+  </footer>
+
+</body>
+</html>
